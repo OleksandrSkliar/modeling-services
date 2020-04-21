@@ -1,0 +1,79 @@
+.header
+	position: relative
+	background: $dark url("../img/bg-header.jpg") no-repeat center / cover
+	height: 100vh
+	color: $light
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $dark
+		opacity: 0.74
+	&__nav
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 34px
+		padding-bottom: 67px
+	&__contacts
+		display: flex
+		flex-direction: column
+		&-wrapper
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: -30px
+				width: 28px
+				height: 42px
+				background: url("../img/phone-icon.png")
+
+	
+// .header 
+//   position: fixed
+//   left: 0
+//   top: 0
+//   z-index: 99
+//   width: 100%
+//   background-color: $dark
+//   padding: 24px 0
+
+// .menu
+//   display: flex
+//   justify-content: space-between
+//   align-items: center
+
+// .logo
+//   font-family: 'Futura Demi', 'Arial', sans-serif
+//   font-size: 1rem
+//   color: $primary
+//   text-transform: uppercase
+//   text-decoration: none
+
+// .nav
+//   &__item
+//     text-decoration: none
+//     color: $light
+//     text-transform: uppercase
+//     margin-right: 2.66rem
+//     transition: color 0.2s
+//     &:hover
+//       color: $primary
+//     // &--active
+//     //   color: $primary
+
+// .phone
+//   font-family: 'Futura Demi', 'Arial', sans-serif
+//   color: $primary
+
+// .contacts
+//   &__phone
+//     font-family: 'Futura Demi', 'Arial', sans-serif
+//     margin-right: 45px
+//     &:hover
+//       color: $light
