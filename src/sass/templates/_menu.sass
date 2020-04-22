@@ -1,0 +1,39 @@
+.menu
+	&__link
+		display: block
+		position: relative
+		width: 35px
+		height: 22px
+		margin: auto
+		z-index: 199
+		span
+			top: 10px
+		span, span:before, span:after
+			display: block
+			position: absolute
+			right: 0
+			width: 35px
+			height: 2px
+			background-color: $light
+		span:before
+			content: ""
+			margin-top: -8px
+			transition: all 0.2s
+		span:after
+			content: ""
+			margin-top: 8px
+			transition: all 0.2s
+		&--active span
+			background-color: transparent
+			&:before
+				transform: rotate(135deg)
+				margin: 0
+			&:after
+				transform: rotate(-135deg)
+				margin: 0
+	&__list
+		list-style: none
+		padding: 0
+		margin: 0
+		&-link
+			color: $light

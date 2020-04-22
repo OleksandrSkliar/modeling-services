@@ -2947,6 +2947,9 @@ body {
 img {
   max-width: 100%; }
 
+a {
+  text-decoration: none; }
+
 .header {
   position: relative;
   background: #363636 url("../img/bg-header.jpg") no-repeat center/cover;
@@ -2975,8 +2978,8 @@ img {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 34px;
-    padding-bottom: 67px; }
+    padding-top: 2.42rem;
+    padding-bottom: 4.785rem; }
   .header__contacts {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2997,3 +3000,47 @@ img {
         width: 28px;
         height: 42px;
         background: url("../img/phone-icon.png"); }
+
+.menu__link {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 22px;
+  margin: auto;
+  z-index: 199; }
+  .menu__link span {
+    top: 10px; }
+  .menu__link span, .menu__link span:before, .menu__link span:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff; }
+  .menu__link span:before {
+    content: "";
+    margin-top: -8px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .menu__link span:after {
+    content: "";
+    margin-top: 8px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .menu__link--active span {
+    background-color: transparent; }
+    .menu__link--active span:before {
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+      margin: 0; }
+    .menu__link--active span:after {
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      margin: 0; }
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .menu__list-link {
+    color: #ffffff; }
