@@ -1,6 +1,58 @@
+.hero
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	margin: auto
+	&__title
+		width: 52rem
+		font-weight: 700
+		font-size: 3.428rem
+		margin: auto
+		text-align: center
+	&__subtitle
+		font-size: 2.571rem
+	&__form
+		position: relative
+		text-align: center
+		margin-top: 2.642rem
+		&:before
+			content: ""
+			position: absolute
+			top: 100px
+			left: -30px
+			width: 68.142rem
+			height: 5.571rem
+			background: url("../img/outline-form.png") no-repeat
+		&-title
+			max-width: 90%
+			margin: 0 auto
+			font-size: 1.571rem
+			font-weight: 300
+			margin-bottom: 3.214rem
+		&-wrapper
+			width: 64rem
+			display: flex
+			justify-content: space-between
+	&__input
+		width: 20.714rem
+		padding: 1.585rem
+		border: none
+		border-radius: 35px
+		&::placeholder
+			font-size: 0.93rem
+			color: #606060
+	&__policy
+		max-width: 50%
+		display: block
+		margin: auto
+		font-size: 1rem
+		font-weight: 300
+		text-align: center
+
 // .hero
 //   position: relative
-//   display: flex
+//  display: flex
 //   height: 100vh
 //   padding-top: 82px
 //   color: $light

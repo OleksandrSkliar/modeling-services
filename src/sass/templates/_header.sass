@@ -22,13 +22,22 @@
 	&__contacts
 		display: flex
 		flex-direction: column
+		&-text
+			font-family: 'Roboto Light', 'Arial', sans-serif
+			font-size: 0.857rem
+			font-weight: 300
+		&-link
+			font-family: 'Roboto Medium', 'Arial', sans-serif
+			font-size: 1.5rem
+			color: $light
+			font-weight: 500
 		&-wrapper
 			position: relative
 			&:before
 				content: ""
 				position: absolute
-				top: 0
-				left: -30px
+				top: -3
+				left: -35px
 				width: 28px
 				height: 42px
 				background: url("../img/phone-icon.png")
