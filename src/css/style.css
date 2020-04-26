@@ -3047,14 +3047,6 @@ a {
     position: relative;
     text-align: center;
     margin-top: 2.642rem; }
-    .hero__form:before {
-      content: "";
-      position: absolute;
-      top: 100px;
-      left: -30px;
-      width: 68.142rem;
-      height: 5.571rem;
-      background: url("../img/outline-form.png") no-repeat; }
     .hero__form-title {
       max-width: 90%;
       margin: 0 auto;
@@ -3148,3 +3140,25 @@ a {
   font-weight: 500;
   font-size: 0.857rem;
   text-transform: uppercase; }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  html {
+    font-size: 12px; }
+  .container {
+    width: 85%; }
+  .header__contacts-wrapper:before {
+    top: -5px; }
+  .hero__title {
+    width: 45rem;
+    font-size: 2.7rem; }
+  .hero__subtitle {
+    font-size: 1.7rem; }
+  .hero__input {
+    width: 17rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 35px; }
+  .hero__form-wrapper {
+    width: 54rem; }
+  .button {
+    padding: 18px 40px; } }
