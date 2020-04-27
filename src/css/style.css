@@ -2939,9 +2939,21 @@ template {
   .button--primary {
     display: block;
     margin: auto;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     background-color: #19b5fe;
     color: #ffffff; }
+
+.input-group {
+  position: relative; }
+
+div.invalid {
+  color: tomato;
+  position: absolute;
+  bottom: -17px;
+  left: 20px; }
+
+input.invalid {
+  border: 2px solid tomato; }
 
 .container {
   max-width: 1140px;
@@ -3027,6 +3039,12 @@ a {
         width: 28px;
         height: 42px;
         background: url("../img/phone-icon.png"); }
+  .header__scroll {
+    position: absolute;
+    left: 50%;
+    top: 90%; }
+    .header__scroll-link {
+      display: inline-block; }
 
 .hero {
   position: absolute;
