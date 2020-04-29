@@ -1,8 +1,8 @@
 .header
 	position: relative
 	background: $dark url("../img/bg-header.jpg") no-repeat center / cover
-	height: 100vh
 	color: $light
+	min-height: 100vh
 	&:before
 		content: ""
 		position: absolute
@@ -43,8 +43,7 @@
 				background: url("../img/phone-icon.png")
 	&__scroll
 		position: absolute
-		left: 50%
-		top: 90%
+		bottom: 0
 		&-link
 			display: inline-block
 

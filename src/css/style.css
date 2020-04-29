@@ -2983,8 +2983,8 @@ a {
 .header {
   position: relative;
   background: #363636 url("../img/bg-header.jpg") no-repeat center/cover;
-  height: 100vh;
-  color: #ffffff; }
+  color: #ffffff;
+  min-height: 100vh; }
   .header:before {
     content: "";
     position: absolute;
@@ -3041,18 +3041,48 @@ a {
         background: url("../img/phone-icon.png"); }
   .header__scroll {
     position: absolute;
-    left: 50%;
-    top: 90%; }
+    bottom: 0; }
     .header__scroll-link {
       display: inline-block; }
 
 .hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: auto; }
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+  .hero__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 90px; }
   .hero__title {
     width: 52rem;
     font-weight: 700;
@@ -3178,5 +3208,40 @@ a {
     border-radius: 35px; }
   .hero__form-wrapper {
     width: 54rem; }
+  .button {
+    padding: 18px 40px; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    font-size: 10px; }
+  .container {
+    width: 80%; }
+  .header__contacts-wrapper {
+    display: none; }
+  .header__scroll {
+    display: none; }
+  .hero__title {
+    width: 45rem;
+    font-size: 2.7rem; }
+  .hero__subtitle {
+    font-size: 1.7rem; }
+  .hero__input {
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 35px; }
+    .hero__input-group {
+      margin-bottom: 1rem; }
+  .hero__form-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
   .button {
     padding: 18px 40px; } }
