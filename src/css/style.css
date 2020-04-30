@@ -3039,11 +3039,8 @@ a {
         width: 28px;
         height: 42px;
         background: url("../img/phone-icon.png"); }
-  .header__scroll {
-    position: absolute;
-    bottom: 0; }
-    .header__scroll-link {
-      display: inline-block; }
+  .header__scroll-link {
+    display: inline-block; }
 
 .hero {
   width: 100%;
@@ -3221,7 +3218,7 @@ a {
   .header__scroll {
     display: none; }
   .hero__title {
-    width: 45rem;
+    width: 100%;
     font-size: 2.7rem; }
   .hero__subtitle {
     font-size: 1.7rem; }
@@ -3231,7 +3228,9 @@ a {
     border: none;
     border-radius: 35px; }
     .hero__input-group {
-      margin-bottom: 1rem; }
+      margin-bottom: 3.5rem; }
+    .hero__input-group:last-of-type {
+      margin-bottom: 0; }
   .hero__form-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3243,5 +3242,7 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%; }
+  .hero__subtitle {
+    display: none; }
   .button {
-    padding: 18px 40px; } }
+    padding: 14px 40px; } }
