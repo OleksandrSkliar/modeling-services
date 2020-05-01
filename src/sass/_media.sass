@@ -23,6 +23,20 @@
         width: 54rem
   .button
     padding: 18px 40px
+  .services
+    &__text
+      margin-top: 0
+      margin-bottom: 0
+    &__title
+      font-size: 20px
+    &__description
+      font-size: 15px
+  .section
+    &__title 
+      font-size: 2rem
+      &:after
+        width: 20rem
+        margin-top: 1rem
 
 @media ( min-width: 320px ) and ( max-width: 767px )
   html
@@ -58,3 +72,16 @@
       display: none
   .button
     padding: 14px 40px
+  .row
+    flex-direction: column
+  .col
+    &-100
+      width: 100%
+    &-45
+      &--order
+        order: 0
+  .services
+    &__wrapper
+      align-items: center
+      text-align: center
+      flex-direction: column
