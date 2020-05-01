@@ -2940,6 +2940,7 @@ template {
     display: block;
     margin: auto;
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
     background-color: #19b5fe;
     color: #ffffff; }
 
@@ -2991,7 +2992,8 @@ input.invalid {
     order: 1; }
 
 .col-50 {
-  width: 48%; }
+  width: 50%;
+  position: relative; }
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -3013,8 +3015,15 @@ img {
 a {
   text-decoration: none; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 .section {
   padding: 50px 0; }
+  .section--bg {
+    background-color: #f2f8f9; }
   .section__title {
     font-size: 2.571rem;
     font-weight: 300;
@@ -3268,6 +3277,79 @@ a {
   font-weight: 400;
   line-height: 24px; }
 
+.advantages__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.advantages__item {
+  width: 30%;
+  margin-bottom: 25px; }
+
+.advantages__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 80px; }
+
+.advantages__description {
+  color: #3f3f3f;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.428rem;
+  margin: 0;
+  margin-top: 23px; }
+
+.operation__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.operation__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.operation__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.operation__title {
+  font-size: 2.142rem;
+  font-weight: 300;
+  color: #464646; }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   html {
     font-size: 12px; }
@@ -3300,13 +3382,27 @@ a {
     font-size: 2rem; }
     .section__title:after {
       width: 20rem;
-      margin-top: 1rem; } }
+      margin-top: 1rem; }
+  .operation__title {
+    font-size: 1.5rem; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   html {
     font-size: 10px; }
   .container {
     width: 80%; }
+  .section {
+    padding: 30px 0; }
+    .section__title {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+      .section__title:after {
+        width: 15rem;
+        margin-top: 0.8rem; }
+  .services__title {
+    font-size: 18px; }
+  .services__description {
+    font-size: 15px; }
   .header__contacts-wrapper {
     display: none; }
   .header__scroll {
@@ -3363,4 +3459,48 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-bottom: 4rem; }
+  .advantages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .advantages__item {
+    width: 100%; }
+    .advantages__item:last-of-type {
+      margin-bottom: 0; }
+  .advantages__description {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px; }
+  .operation__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .operation__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+    .operation__wrapper:last-of-type {
+      margin-bottom: 0; }
+  .operation__title {
+    font-size: 1.8rem;
+    margin-bottom: 0; }
+  .operation__text {
+    text-align: center;
+    position: relative; }
+  .operation--order {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; } }

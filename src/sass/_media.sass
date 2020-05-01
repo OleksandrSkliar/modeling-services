@@ -37,12 +37,28 @@
       &:after
         width: 20rem
         margin-top: 1rem
+  .operation
+    &__title
+      font-size: 1.5rem
 
 @media ( min-width: 320px ) and ( max-width: 767px )
   html
     font-size: 10px
   .container
     width: 80%
+  .section
+    padding: 30px 0
+    &__title 
+      font-size: 2rem
+      margin-bottom: 2rem
+      &:after
+        width: 15rem
+        margin-top: 0.8rem
+  .services
+    &__title
+      font-size: 18px
+    &__description
+      font-size: 15px
   .header
     &__contacts-wrapper
       display: none
@@ -85,3 +101,32 @@
       align-items: center
       text-align: center
       flex-direction: column
+      margin-bottom: 4rem
+  .advantages
+    &__list
+      flex-direction: column
+    &__item
+      width: 100%
+      &:last-of-type
+        margin-bottom: 0
+    &__description
+      width: 50%
+      margin: auto
+      margin-top: 20px
+  .operation
+    &__item
+      display: flex
+    &__wrapper
+      display: flex
+      flex-direction: column
+      margin-bottom: 2rem
+      &:last-of-type
+        margin-bottom: 0
+    &__title
+      font-size: 1.8rem
+      margin-bottom: 0
+    &__text
+      text-align: center
+      position: relative
+    &--order
+      order: 1
