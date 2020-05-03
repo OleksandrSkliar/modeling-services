@@ -1,0 +1,57 @@
+.questions
+  position: relative
+  background-image: url('../img/questions_bg.jpg')
+  background-repeat: no-repeat
+  color: $light
+  min-height: 100vh
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $dark
+    opacity: 0.65
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    position: relative
+    text-align: center
+    margin-top: 2.642rem
+    &-wrapper
+      width: 53.57rem
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &-title
+      width: 100%
+      font-size: 1.857rem
+      line-height: 2.714rem
+      font-weight: 300
+      margin-top: 0
+      margin-bottom: 3.142rem
+  &__input
+    width: 17.142rem
+    padding: 1.428rem
+    background-color: #ffffff;
+    border: none
+    border-radius: 15px
+    &::placeholder
+      font-size: 0.93rem
+      color: #606060
+  &__text
+    width: 53.57rem
+    min-height: 8.785rem
+    border: none
+    border-radius: 15px
+    margin-top: 2rem
+    padding: 1.428rem
+  &__button
+    margin: 0 auto
+    margin-top: 1.214rem 
+  &__title
+    &--light
+      position: relative
+      color: $light

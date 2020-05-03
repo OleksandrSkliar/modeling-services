@@ -1,0 +1,41 @@
+.contacts
+  text-align: left
+  position: relative
+  margin-right: 7rem
+  &__item
+    margin-bottom: 1.5rem
+    &--tel, &--viber, &--mail, &--skype, &--telegram
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 16px
+        height: 16px
+        left: -40px
+        top: -3px
+        border: 1px solid $light
+        padding: 12px
+        background: url('../img/tel-icon.svg') no-repeat center
+    &--viber
+      &::before
+        background: url('../img/viber.svg') no-repeat center
+    &--mail
+      &::before
+        background: url('../img/mail-icon.svg') no-repeat center
+    &--skype
+      &::before
+        background: url('../img/skype-icon.svg') no-repeat center
+    &--telegram
+      &::before
+        background: url('../img/telegram-icon.svg') no-repeat center
+  &__link
+    color: $light
+    font-size: 1.285rem
+    line-height: 1.714rem
+    font-weight: 500
+  &__text
+    width: 21.714rem
+    position: absolute
+    left: -40px
+    font-size: 1.142rem
+    font-weight: 300
