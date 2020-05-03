@@ -89,6 +89,44 @@
       min-height: 6.785rem
       padding: 1.2rem
 
+@media ( min-width: 768px ) and ( max-width: 991px )
+  html
+    font-size: 12px
+  .questions
+    &__form
+      flex-direction: column
+      &-title
+        font-size: 1.5rem
+      &-wrapper
+        display: flex
+        margin: auto
+        justify-content: space-between
+        flex-wrap: wrap
+    &__text
+      min-height: 6.785rem
+      padding: 1.2rem
+    &__input
+      padding: 1.2rem
+  .button
+    padding: 15px 35px
+  .contacts
+    margin-right: 0
+    &__list
+      justify-content: space-between
+      width: 80%
+      flex-wrap: wrap
+      display: flex
+      margin: 0 auto
+      padding-left: 60px
+      margin-top: 2rem
+    &__item
+      width: 16.666rem
+    &__text
+      display: flex
+      position: relative
+      left: 0
+      margin: auto
+
 
 
 @media ( min-width: 320px ) and ( max-width: 767px )
@@ -209,6 +247,45 @@
       &-text
         margin-top: 0
         margin-bottom: 1rem
+  .questions
+    &__form
+      flex-direction: column
+      &-title
+        font-size: 1.5rem
+      &-wrapper
+        width: 100%
+        margin: auto
+        flex-wrap: nowrap
+        flex-direction: column
+    &__text
+      width: 100%
+      min-height: 5.785rem
+      padding: 1.2rem
+      margin-top: 0
+    &__input
+      width: 100%
+      padding: 1.2rem
+      &-group
+        margin-bottom: 3rem
+    &__button
+      margin-top: 0
+      padding: 14px 40px
+  .contacts
+    margin-right: 0
+    &__list
+      justify-content: space-between
+      width: 80%
+      flex-wrap: wrap
+      display: flex
+      margin: 0 auto
+      margin-top: 2rem
+    &__item
+      width: 16.666rem
+    &__text
+      display: flex
+      position: relative
+      left: 0
+      margin: auto
 
 @media ( min-width: 320px ) and ( max-width: 375px )
   .team

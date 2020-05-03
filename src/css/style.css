@@ -3020,6 +3020,10 @@ ul {
   padding: 0;
   margin: 0; }
 
+.mapa {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%); }
+
 .section {
   padding: 50px 0; }
   .section--bg {
@@ -3190,7 +3194,6 @@ ul {
       font-size: 0.93rem;
       color: #606060; }
   .hero__policy {
-    max-width: 50%;
     display: block;
     margin: auto;
     font-size: 1rem;
@@ -3468,8 +3471,8 @@ ul {
   position: relative;
   background-image: url("../img/questions_bg.jpg");
   background-repeat: no-repeat;
-  color: #ffffff;
-  min-height: 100vh; }
+  background-size: cover;
+  color: #ffffff; }
   .questions:before {
     content: "";
     position: absolute;
@@ -3647,6 +3650,66 @@ ul {
     min-height: 6.785rem;
     padding: 1.2rem; } }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 12px; }
+  .questions__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .questions__form-title {
+      font-size: 1.5rem; }
+    .questions__form-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .questions__text {
+    min-height: 6.785rem;
+    padding: 1.2rem; }
+  .questions__input {
+    padding: 1.2rem; }
+  .button {
+    padding: 15px 35px; }
+  .contacts {
+    margin-right: 0; }
+    .contacts__list {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 80%;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 auto;
+      padding-left: 60px;
+      margin-top: 2rem; }
+    .contacts__item {
+      width: 16.666rem; }
+    .contacts__text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      left: 0;
+      margin: auto; } }
+
 @media (min-width: 320px) and (max-width: 767px) {
   html {
     font-size: 10px; }
@@ -3810,7 +3873,66 @@ ul {
     order: 1; }
   .blog__link-text {
     margin-top: 0;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .questions__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .questions__form-title {
+      font-size: 1.5rem; }
+    .questions__form-wrapper {
+      width: 100%;
+      margin: auto;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .questions__text {
+    width: 100%;
+    min-height: 5.785rem;
+    padding: 1.2rem;
+    margin-top: 0; }
+  .questions__input {
+    width: 100%;
+    padding: 1.2rem; }
+    .questions__input-group {
+      margin-bottom: 3rem; }
+  .questions__button {
+    margin-top: 0;
+    padding: 14px 40px; }
+  .contacts {
+    margin-right: 0; }
+    .contacts__list {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 80%;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 2rem; }
+    .contacts__item {
+      width: 16.666rem; }
+    .contacts__text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      left: 0;
+      margin: auto; } }
 
 @media (min-width: 320px) and (max-width: 375px) {
   .team__wrap-img {
