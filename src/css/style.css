@@ -3045,6 +3045,27 @@ ul {
       margin: auto;
       margin-top: 1.5rem; }
 
+.slick__item {
+  height: 100px;
+  line-height: 100px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 60px;
+  margin: 0 5px; }
+
+.slick-list {
+  overflow: hidden; }
+
+.slick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .header {
   position: relative;
   background: #363636 url("../img/bg-header.jpg") no-repeat center/cover;
