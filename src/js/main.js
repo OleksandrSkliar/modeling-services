@@ -146,17 +146,39 @@ jQuery(document).ready(function ($) {
 	})
 
 	$('.slider').on('afterChange', function (e, slick, currentSlide) {
-		$('.slider__range').val(currentSlide + 1);
+		$('.slider__range').val(currentSlide + 0);
 	})
 
 	$('.slider__range').on('input change', function () {
-		$('.slider').slick('slickGoTo', this.value - 1);
+		$('.slider').slick('slickGoTo', this.value - 0);
 	});
 
 	$('.slider').slick({
-		slidesToShow: 7,
+		slidesToShow: 5,
 		arrows: false,
-		dots: false
+		dots: false,
+		adaptiveHeight: true,
+		infinite: true,
+		slidesToScroll: 1,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	})
 
 
