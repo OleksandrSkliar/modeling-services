@@ -1,12 +1,33 @@
 jQuery(document).ready(function ($) {
 	var menu = $('.menu__link');
 	var menu_active = $('.menu__link--active');
+	var filter = $('[data-filter]');
 
 	menu.click(function () {
 		menu.toggleClass('menu__link--active');
 	});
 	menu_active.click(function () {
 		menu_active.removeClass('menu__link--active');
+	});
+
+	//Фильтр по категорям
+	filter.click(function (event) {
+		$(this).addClass('active');
+		event.preventDefault();
+
+		var cat = $(this).data('filter');
+		if (cat == 'all') {
+			$('[data-cat]').removeClass('hide');
+		} else {
+			$('[data-cat]').each(function () {
+				var workCat = $(this).data('cat');
+				if (workCat != cat) {
+					$(this).addClass('hide');
+				} else {
+					$(this).removeClass('hide');
+				}
+			});
+		}
 	});
 
 	// Валидация формы
@@ -179,7 +200,6 @@ jQuery(document).ready(function ($) {
 				}
 			},
 		]
-	})
-
+	});
 
 });

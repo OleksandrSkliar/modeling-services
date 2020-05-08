@@ -3010,7 +3010,8 @@ body {
   padding: 0; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 a {
   text-decoration: none; }
@@ -3089,6 +3090,9 @@ ul {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end; }
+
+.hide {
+  display: none; }
 
 .header {
   position: relative;
@@ -3325,6 +3329,50 @@ ul {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px; }
+
+.works__nav {
+  max-width: 58.857rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 1.4rem; }
+  .works__nav-link {
+    font-size: 1rem;
+    line-height: 2.714rem;
+    font-weight: 300;
+    color: #19b5fe;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    border: 1px solid #19b5fe;
+    border-radius: 50px; }
+
+.active {
+  border: none;
+  background-color: #19b5fe;
+  color: #ffffff; }
+
+.portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -1rem; }
+  .portfolio__col {
+    -webkit-flex-basis: 33%;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%;
+    padding: 1rem; }
+  .portfolio__img {
+    display: block; }
 
 .advantages__list {
   display: -webkit-box;
@@ -3746,7 +3794,12 @@ ul {
   .questions__text {
     width: 45rem;
     min-height: 6.785rem;
-    padding: 1.2rem; } }
+    padding: 1.2rem; }
+  .works__nav {
+    max-width: 55rem;
+    margin-bottom: 1rem; }
+    .works__nav-link {
+      padding: 0.5rem 1.5rem; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   html {
@@ -3808,7 +3861,12 @@ ul {
       left: 0;
       margin: auto; }
   .footer__link {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .works__nav {
+    max-width: 52rem;
+    margin-bottom: 1rem; }
+    .works__nav-link {
+      padding: 0.4rem 1.2rem; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   html {
