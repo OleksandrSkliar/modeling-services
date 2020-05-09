@@ -12,8 +12,9 @@ jQuery(document).ready(function ($) {
 
 	//Фильтр по категорям
 	filter.click(function (event) {
-		$(this).addClass('active');
 		event.preventDefault();
+		$('.works__nav-link').removeClass('active');
+		$(this).addClass('active');
 
 		var cat = $(this).data('filter');
 		if (cat == 'all') {
