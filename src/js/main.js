@@ -1,13 +1,17 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
 	var menu = $('.menu__link');
 	var menu_active = $('.menu__link--active');
 	var filter = $('[data-filter]');
+	var menu_list = $('.menu__wrap');
+	var nav_link = $('.menu__wrap a');
 
 	menu.click(function () {
 		menu.toggleClass('menu__link--active');
+		menu_list.toggleClass('menu__wrap--active');
 	});
-	menu_active.click(function () {
-		menu_active.removeClass('menu__link--active');
+	nav_link.click(function () {
+		menu.toggleClass('menu__link--active');
+		menu_list.toggleClass('menu__wrap--active');
 	});
 
 	//Фильтр по категорям
