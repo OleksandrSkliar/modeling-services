@@ -1,5 +1,6 @@
 .works
   &__nav
+    position: relative
     max-width: 58.857rem
     display: flex
     justify-content: space-between
@@ -14,6 +15,37 @@
       padding: 0.8rem 2rem
       border: 1px solid $primary
       border-radius: 50px
+  &__btn
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    transition: all 0.2s ease-in-out
+    position: relative
+    overflow: hidden
+    &:before
+      content: ""
+      background-color: rgba(255, 255, 255, 0.5)
+      height: 100%
+      width: 2em
+      display: block
+      position: absolute
+      top: 0
+      left: -4.5em
+      transform: skewX(-45deg) translateX(0em)
+      transition: none
+    &:hover
+      background-color: $primary
+      color: $light
+      &:before
+        transform: skewX(-45deg) translateX(30em)
+        transition: all 0.9s ease-in-out
+@keyframes sheen 
+  0% 
+    transform: skewY(-45deg) translateX(0)
+  100% 
+    transform: skewY(-45deg) translateX(12.5em)
+  
+
 .active
   border: none
   background-color: $primary

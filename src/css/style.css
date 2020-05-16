@@ -2928,6 +2928,8 @@ template {
     animation-iteration-count: 1 !important; } }
 
 .button {
+  position: relative;
+  display: inline-block;
   font-weight: 500;
   font-size: 1.142rem;
   padding: 24px 50px;
@@ -2937,7 +2939,7 @@ template {
   .button:hover {
     cursor: pointer; }
   .button--primary {
-    display: block;
+    display: inline-block;
     margin: auto;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -3023,9 +3025,7 @@ ul {
 
 .mapa {
   -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
-  overflow: hidden;
-  height: 350px; }
+  filter: grayscale(50%); }
 
 .section {
   padding: 50px 0; }
@@ -3304,6 +3304,7 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -3334,7 +3335,7 @@ ul {
   padding: 0;
   margin: 0; }
   .menu__list-link {
-    display: block;
+    display: inline-block;
     width: 100%;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -3382,6 +3383,7 @@ ul {
   line-height: 24px; }
 
 .works__nav {
+  position: relative;
   max-width: 58.857rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3402,6 +3404,52 @@ ul {
     padding: 0.8rem 2rem;
     border: 1px solid #19b5fe;
     border-radius: 50px; }
+
+.works__btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden; }
+  .works__btn:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 2em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0em);
+    transform: skewX(-45deg) translateX(0em);
+    -webkit-transition: none;
+    transition: none; }
+  .works__btn:hover {
+    background-color: #19b5fe;
+    color: #ffffff; }
+    .works__btn:hover:before {
+      -webkit-transform: skewX(-45deg) translateX(30em);
+      transform: skewX(-45deg) translateX(30em);
+      -webkit-transition: all 0.9s ease-in-out;
+      transition: all 0.9s ease-in-out; }
+
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+    transform: skewY(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+    transform: skewY(-45deg) translateX(12.5em); } }
+
+@keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+    transform: skewY(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+    transform: skewY(-45deg) translateX(12.5em); } }
 
 .active {
   border: none;
@@ -4257,7 +4305,10 @@ ul {
         transform: rotate(-135deg);
         margin: 0;
         left: 0;
-        margin-top: 0; } }
+        margin-top: 0; }
+  .mapa {
+    overflow: hidden;
+    height: 350px; } }
 
 @media (min-width: 320px) and (max-width: 375px) {
   .team__wrap-img {

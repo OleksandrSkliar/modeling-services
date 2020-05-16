@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Услиги по 3D моделированию</title>
   </head>
@@ -30,29 +31,35 @@
             <div class="menu__wrap">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#services" class="menu__list-link">Наши услуги</a>
+                  <a href="#services" class="menu__list-link menu--hover"
+                    >Наши услуги</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="#works" class="menu__list-link">Портфолио </a>
+                  <a href="#works" class="menu__list-link menu--hover"
+                    >Портфолио
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#advantages" class="menu__list-link"
+                  <a href="#advantages" class="menu__list-link menu--hover"
                     >Почему мы лучшие?
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#operation" class="menu__list-link"
+                  <a href="#operation" class="menu__list-link menu--hover"
                     >Процесс взаимодействия
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#team" class="menu__list-link">Наша команда </a>
+                  <a href="#team" class="menu__list-link menu--hover"
+                    >Наша команда
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#blog" class="menu__list-link">Блог </a>
+                  <a href="#blog" class="menu__list-link menu--hover">Блог </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#contacts" class="menu__list-link"
+                  <a href="#contacts" class="menu__list-link menu--hover"
                     >Остались вопросы?
                   </a>
                 </li>
@@ -64,7 +71,7 @@
       <div class="hero">
         <div class="container">
           <div class="hero__content">
-            <h1 class="hero__title">
+            <h1 class="hero__title wow zoomInDown" data-wow-duration="1s">
               Услиги по 3D моделированию
               <span class="hero__subtitle">полный спектр услуг</span>
             </h1>
@@ -128,7 +135,9 @@
         <div class="scroll header__scroll">
           <a class="header__scroll-link" href="#scroll-down">
             <img
-              class="header__scroll-img"
+              class="header__scroll-img wow bounce"
+              data-wow-duration="5s"
+              data-wow-iteration="2"
               src="img/mouse.svg"
               alt="Скрол вниз"
             />
@@ -204,16 +213,35 @@
       <div class="container">
         <h2 class="section__title">Портфолио</h2>
         <div class="works__nav">
-          <a href="#" class="works__nav-link" data-filter="all">все проекты</a>
-          <a href="#" class="works__nav-link" data-filter="exteriors"
-            >экстерьеры
-          </a>
-          <a href="#" class="works__nav-link" data-filter="resid-interiors"
-            >жилые интерьеры</a
-          >
-          <a href="#" class="works__nav-link" data-filter="pub-interiors"
-            >общественные интерьеры
-          </a>
+          <div class="works__wrapper">
+            <a href="#" class="works__nav-link works__btn" data-filter="all"
+              >все проекты</a
+            >
+          </div>
+          <div class="works__wrapper">
+            <a
+              href="#"
+              class="works__nav-link works__btn"
+              data-filter="exteriors"
+              >экстерьеры
+            </a>
+          </div>
+          <div class="works__wrapper">
+            <a
+              href="#"
+              class="works__nav-link works__btn"
+              data-filter="resid-interiors"
+              >жилые интерьеры</a
+            >
+          </div>
+          <div class="works__wrapper">
+            <a
+              href="#"
+              class="works__nav-link works__btn"
+              data-filter="pub-interiors"
+              >общественные интерьеры
+            </a>
+          </div>
         </div>
         <div class="portfolio">
           <div class="portfolio__col" data-cat="resid-interiors">
@@ -674,9 +702,7 @@
         </form>
       </div>
     </section>
-    <div class="mapa" id="map">
-      <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3754c797528bc1eeb72981eb1ac8fefe5de4640db416d6b243bde67e0771bef&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
-    </div>
+    <div class="mapa" id="map"></div>
     <!-- /.section questions -->
     <footer class="footer">
       <div class="container">
@@ -746,6 +772,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
